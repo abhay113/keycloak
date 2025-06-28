@@ -18,7 +18,10 @@ ENV KC_PROXY=passthrough
 
 # Set dynamic port (Render exposes via $PORT)
 ENV PORT=10000
-ENV KC_HTTP_PORT=$PORT
+ENV KC_HTTP_PORT=10000
+
+# Expose the port so Render can detect it
+EXPOSE 10000
 
 # Build the Keycloak server with Postgres support
 RUN /opt/keycloak/bin/kc.sh build --db postgres
