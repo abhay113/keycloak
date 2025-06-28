@@ -11,8 +11,8 @@ ENV KC_DB_USERNAME=abhay
 ENV KC_DB_PASSWORD=qBvyO1n5xPxdAgZfPqGilmUUKOz4x3pT
 
 # Updated with your service name: keycloak-db
-ENV KC_HOSTNAME=keycloak.onrender.com
-ENV KC_HOSTNAME_ADMIN=keycloak.onrender.com
+ENV KC_HOSTNAME=keycloak-si6z.onrender.com
+ENV KC_HOSTNAME_ADMIN=keycloak-si6z.onrender.com
 ENV KC_HTTP_ENABLED=true
 ENV KC_HTTP_PORT=8080
 ENV KC_PROXY=passthrough
