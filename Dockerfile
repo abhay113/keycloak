@@ -25,4 +25,5 @@ FROM quay.io/keycloak/keycloak:26.2.5
 COPY --from=builder /opt/keycloak/ /opt/keycloak/
 
 # Set the entrypoint command for Keycloak
-CMD ["/opt/keycloak/bin/kc.sh", "start", "--optimized"]
+ENTRYPOINT ["/opt/keycloak/bin/kc.sh"]
+CMD ["start", "--optimized"]
